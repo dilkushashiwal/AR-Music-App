@@ -1,0 +1,156 @@
+ /* CSS :Reset */
+ body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 20px;
+    padding: 0px;
+    background: url('img/bg..png') ;
+    color: rgb(255, 255, 255);
+    display: block;
+    z-index: -1;
+    opacity: 5;
+}
+
+.left {
+    /* border: 3px solid rgb(233, 63, 182); */
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.mid {
+
+    /* border: 3px solid rgb(233, 19, 19); */
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+ul.navbar{
+    margin: 0px;
+}
+
+.right {
+
+    /* border: 3px solid rgb(169, 21, 214); */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 30px;
+}
+
+
+
+.navbar li{
+
+    font-display: 50px;
+    display: inline-block;
+}
+
+.navbar li a{
+    color: beige;
+    text-decoration: none;
+
+}
+
+.navbar li a:hover , .navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.left{
+    justify-content: center;
+    text-align: center;
+}
+
+.left img {
+    height: 50px;
+    width: 140px;
+    filter: invert(100%);
+    background: transparent;
+    margin-left: 1px;
+    margin-bottom: 2px;
+}
+
+.left div {
+    text-align: center;
+    line-height: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 0px 9px;
+    color: white;
+    background: black;
+    padding: 3px 12px;
+    border: 2px solid rgb(148, 144, 144);
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn2{
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn:hover {
+
+    background-color: rgb(75, 74, 74);
+}
+
+
+
+.container {
+    border: 4px solid white;
+    margin: 90px 87px;
+    padding: 91px 78px;
+    border-radius: 40px;
+    width: 38%;
+
+}
+
+
+.container h1 {
+    text-align: center;
+    text-shadow: 4px 1px 5px black;
+}
+
+.container p {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 4px 1px 5px black;
+}
+
+.container div{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 6px;
+}
+
+.container div img{
+    height: 100px;
+    width: 100px;
+}
+
+.container div img {
+animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
